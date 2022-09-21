@@ -1,3 +1,6 @@
 flask
 requests
+matplotlib
+opencv-python
+scikit-image
 gunicorn
