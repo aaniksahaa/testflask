@@ -48,6 +48,8 @@ def getLyricsFromID(id):
 
 app = flask.Flask(__name__)
 
+app.config['JSONIFY_PRETTYPRINT_REGULAR'] = True
+
 @app.route('/quotes', methods=['GET'])
 def getQuote():
     print("Yes hereee")
@@ -101,7 +103,7 @@ def getMusic():
     #print(tt)
 
     hits = tt['response']['hits']
-    
+
     #if(len(hits)==0):
         #return []
 
